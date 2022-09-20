@@ -69,10 +69,10 @@ jobs:
       - name: print the results after running os
         run: |
           cat qemu_run_output.txt
-          
       - name: Download Scripts
         run: |
           git clone $SCRIPT_REPO .github/classroom
+          ls .github/classroom
       - uses: yfblock/os-autograding@master
         id: autograding
         with:
